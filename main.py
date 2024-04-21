@@ -1,9 +1,9 @@
 import time
-import cianparser
+from cianparser import CianParser
 import datetime
 
 def run(city_name, proxy_list, deal_type_list, room_list, page_start, page_end):
-	parser = cianparser.CianParser(location=city_name)
+	parser = CianParser(location=city_name)
 	
 	for deal_type in deal_type_list:
 		for room in room_list:
@@ -22,7 +22,7 @@ rooms = [1, 2, 3, 4, 5, 'studio']
 
 page_limit = 50
 # cities = ['Нягань', 'Когалым', 'Мегион', 'Радужный', 'Лангепас', 'Урай', 'Лянтор', 'Пыть-Ях', 'Югорск', 'Советский', 'Белоярский', 'Покачи']
-cities = ['']
+cities = ['Мегион']
 
 # run('Нефтеюганск', proxies, deal_types, rooms, 22, page_limit)
 
