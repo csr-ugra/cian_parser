@@ -21,9 +21,10 @@ rooms = [1, 2, 3, 4, 5, 'studio']
 # run('Нижневартовск', proxies, deal_types, rooms)
 
 page_limit = 50
-cities = ['Нягань', 'Когалым', 'Мегион', 'Радужный', 'Лангепас', 'Урай', 'Лянтор', 'Пыть-Ях', 'Югорск', 'Советский', 'Белоярский', 'Покачи']
+# cities = ['Нягань', 'Когалым', 'Мегион', 'Радужный', 'Лангепас', 'Урай', 'Лянтор', 'Пыть-Ях', 'Югорск', 'Советский', 'Белоярский', 'Покачи']
+cities = ['']
 
-run('Нефтеюганск', proxies, deal_types, rooms, 22, page_limit)
+# run('Нефтеюганск', proxies, deal_types, rooms, 22, page_limit)
 
 for city in cities:
 	run(city, proxies, deal_types, rooms, 1, page_limit)
